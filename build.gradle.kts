@@ -2,7 +2,6 @@ import com.android.build.gradle.BaseExtension
 import com.flixclusive.gradle.FlixclusiveProviderExtension
 import com.flixclusive.gradle.getFlixclusive
 
-
 buildscript {
     repositories {
         google()
@@ -49,17 +48,15 @@ subprojects {
          * own github profile link
          * */
         author(
-            name = "flixclusiveorg",
-            image = "http://github.com/flixclusiveorg.png",
-            socialLink = "http://github.com/flixclusiveorg",
+            name = "Aliou David",
+            image = "", // No image provided
+            socialLink = "http://github.com/alioudavid",
         )
-        // author( ... )
-
-        setRepository("https://github.com/flixclusiveorg/providers-template")
+        setRepository("https://github.com/alioudavid/Dave")
     }
 
     android {
-        namespace = "com.github.flixclusiveorg.providersTemplate.${name.replaceFirstChar { it.lowercase() }}"
+        namespace = "com.github.alioudavid.dave"
     }
 
     dependencies {
